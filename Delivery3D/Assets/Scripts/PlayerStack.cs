@@ -1,42 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
 public class PlayerStack : MonoBehaviour
 {
-    float rotationx;
-
-    
-    void Update()
+    [SerializeField] GameObject Basket;
+    float newPos;
+    private void Start()
     {
-        if (Input.GetMouseButton(0))
-        {
-            
-            Rotatex();
-        }
-        if (Input.GetMouseButtonUp(0))
-        {
-            StartCoroutine(RotateDegresX());
-        }
-
+        newPos=1.5f;
     }
-  
-    void Rotatex()
+    private void OnTriggerEnter(Collider other)
     {
-        StopAllCoroutines();
-        rotationx += Time.deltaTime * 50;
-        rotationx = Mathf.Clamp(rotationx, 0, 10);
-        transform.localRotation = Quaternion.Euler(rotationx, 0, 0);
-    }
-    IEnumerator RotateDegresX()
-    {
-        while (rotationx >= 0)
+        if (other.gameObject.CompareTag("Box"))
         {
-            rotationx-= Time.deltaTime * 50;
-            rotationx = Mathf.Clamp(rotationx, 0, 10);
-            transform.localRotation = Quaternion.Euler(rotationx, 0, 0);
-            yield return new WaitForSeconds(0.01f);
+            other.gameObject.transform.parent = Basket.transform;
+            other.transform.localPosition = new Vector3(0,newPos,0);
+            other.transform.rotation = Basket.transform.rotation;
+            newPos +=2f;
+
         }
     }
 }

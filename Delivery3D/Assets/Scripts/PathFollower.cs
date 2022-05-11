@@ -8,8 +8,7 @@ namespace PathCreation.Examples
     {
         public PathCreator pathCreator;
         public EndOfPathInstruction endOfPathInstruction;
-        [SerializeField] float Damping;//200
-        [SerializeField] GameObject SkidMarks;
+        [SerializeField] float Damping;
         float speed = 0;
         float distanceTravelled;
 
@@ -25,7 +24,7 @@ namespace PathCreation.Examples
         {
             if (Input.GetMouseButton(0))
             {
-                //SkidMarks.SetActive(false);
+               
                 StopAllCoroutines();
                 speed+=Time.deltaTime*10;
                 speed = Mathf.Clamp(speed, 0, 10);
@@ -34,7 +33,7 @@ namespace PathCreation.Examples
             if (Input.GetMouseButtonUp(0))
             {
                 StartCoroutine(Slowe());
-                //SkidMarks.SetActive(true);
+               
             }
             if (pathCreator != null)
             {

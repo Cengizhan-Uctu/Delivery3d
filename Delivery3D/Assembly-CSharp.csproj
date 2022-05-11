@@ -58,23 +58,24 @@
   <ItemGroup>
     <Compile Include="Assets\Package\Epic Toon FX\Scripts\ETFXPitchRandomizer.cs" />
     <Compile Include="Assets\Package\PathCreator\Examples\Scripts\PathSpawner.cs" />
-    <Compile Include="Assets\Package\PathCreator\Examples\Scripts\GeneratePathExample.cs" />
     <Compile Include="Assets\Package\Epic Toon FX\Scripts\ETFXLightFade.cs" />
-    <Compile Include="Assets\Package\PathCreator\Examples\Scripts\PathPlacer.cs" />
-    <Compile Include="Assets\ExampleAssets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Package\Epic Toon FX\Scripts\ETFXRotation.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
-    <Compile Include="Assets\Package\PathCreator\Examples\Scripts\PathSceneTool.cs" />
-    <Compile Include="Assets\Scripts\PathFollower.cs" />
-    <Compile Include="Assets\Package\PathCreator\Examples\Scripts\RoadMeshCreator.cs" />
+    <Compile Include="Assets\Package\PathCreator\Examples\Scripts\GeneratePathExample.cs" />
     <Compile Include="Assets\Scripts\PlayerStack.cs" />
-    <Compile Include="Assets\Scripts\StackRotate.cs" />
+    <Compile Include="Assets\Package\PathCreator\Examples\Scripts\PathPlacer.cs" />
+    <Compile Include="Assets\ExampleAssets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Package\PathCreator\Examples\Scripts\PathSceneTool.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\PathFollower.cs" />
+    <Compile Include="Assets\Scripts\StackRotate.cs" />
+    <Compile Include="Assets\Package\PathCreator\Examples\Scripts\RoadMeshCreator.cs" />
+    <Compile Include="Assets\Scripts\StackRotateX.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Package\Epic Toon FX\Prefabs\Environment\Environment FX.txt" />
     <None Include="Assets\Package\Epic Toon FX\Prefabs\Combat\Combat FX.txt" />
-    <None Include="Assets\_www.unityassetcollection.com.txt" />
+    <None Include="Assets\ExampleAssets\_www.unityassetcollection.com.txt" />
     <None Include="Assets\Package\Epic Toon FX\Prefabs\Interactive\Interactive FX.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -716,6 +717,9 @@
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.DeviceSimulator.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.DeviceSimulator.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
