@@ -60,23 +60,39 @@
     <Compile Include="Assets\Package\PathCreator\Examples\Scripts\PathSpawner.cs" />
     <Compile Include="Assets\Package\Epic Toon FX\Scripts\ETFXLightFade.cs" />
     <Compile Include="Assets\Package\Epic Toon FX\Scripts\ETFXRotation.cs" />
+    <Compile Include="Assets\Scripts\StackRotateX.cs" />
+    <Compile Include="Assets\Package\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Package\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Assets\Package\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
+    <Compile Include="Assets\Package\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\Package\PathCreator\Examples\Scripts\GeneratePathExample.cs" />
     <Compile Include="Assets\Scripts\PlayerStack.cs" />
+    <Compile Include="Assets\Scripts\CarMove.cs" />
     <Compile Include="Assets\Package\PathCreator\Examples\Scripts\PathPlacer.cs" />
     <Compile Include="Assets\ExampleAssets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Package\PathCreator\Examples\Scripts\PathSceneTool.cs" />
+    <Compile Include="Assets\Package\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\PathFollower.cs" />
+    <Compile Include="Assets\Package\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
+    <Compile Include="Assets\Package\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\Scripts\StackRotate.cs" />
+    <Compile Include="Assets\Package\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\Package\PathCreator\Examples\Scripts\RoadMeshCreator.cs" />
-    <Compile Include="Assets\Scripts\StackRotateX.cs" />
+    <Compile Include="Assets\Scripts\PlayerCollision.cs" />
+    <Compile Include="Assets\Scripts\test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Package\Epic Toon FX\Prefabs\Environment\Environment FX.txt" />
     <None Include="Assets\Package\Epic Toon FX\Prefabs\Combat\Combat FX.txt" />
     <None Include="Assets\ExampleAssets\_www.unityassetcollection.com.txt" />
+    <None Include="Assets\Package\Plugins\Demigiant\DOTween\DOTween.XML" />
     <None Include="Assets\Package\Epic Toon FX\Prefabs\Interactive\Interactive FX.txt" />
+    <None Include="Assets\Package\Plugins\Demigiant\DOTween\DOTween.dll" />
+    <None Include="Assets\Package\SimpleSky\ReadMe.txt" />
+    <None Include="Assets\Package\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader" />
+    <None Include="Assets\Package\Plugins\Demigiant\DOTween\readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -302,7 +318,7 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+      <HintPath>Assets\Package\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -729,10 +745,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{8D5F40A6-6BD5-6D04-A2E0-85D4534262D5}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
     <ProjectReference Include="PathCreator.csproj">
       <Project>{492837A9-6A37-48A9-E5E7-576F2C6F444E}</Project>
       <Name>PathCreator</Name>

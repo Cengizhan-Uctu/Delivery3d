@@ -8,17 +8,18 @@ public class PlayerStack : MonoBehaviour
     float newPos;
     private void Start()
     {
-        newPos=1.5f;
+        newPos=.5f;
     }
     private void OnTriggerEnter(Collider other)
     {
+        
         if (other.gameObject.CompareTag("Box"))
         {
             other.gameObject.transform.parent = Basket.transform;
             other.transform.localPosition = new Vector3(0,newPos,0);
             other.transform.rotation = Basket.transform.rotation;
-            newPos +=2f;
-
+           // newPos +=other.gameObject.transform.localScale.y;
+            newPos += 2.9f;
         }
     }
 }
